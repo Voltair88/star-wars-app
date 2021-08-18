@@ -31,18 +31,33 @@ function App() {
           onChange={(e) => search(e.target.value)}
           className="search"
         />
+
         {people.map((person) => (
-          <Accordion>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Accordion key={person.name}>
+            <AccordionSummary
+              style={{ padding: "0px" }}
+              expandIcon={<ExpandMoreIcon />}
+            >
               {person.name}
             </AccordionSummary>
+            <p>test</p>
             <AccordionDetails>
               <div className="person-details">
-                <span>Height: {person.height}Cm </span> <br />
-                <span>Mass: {person.mass}Kg </span> <br />
-                <span>Hair Color: {person.hair_color} </span> <br />
-                <span>Eye Color: {person.eye_color} </span> <br />
-                <span>Birth Year: {person.birth_year} </span> <br />
+                <p>
+                  <strong>Birth Year: </strong> {person.birth_year}
+                </p>
+                <p>
+                  <strong>Hair:</strong> {person.hair_color}
+                </p>
+                <p>
+                  <strong>Eye Color:</strong> {person.eye_color}
+                </p>
+                <p>
+                  <strong>Height:</strong> {person.height}
+                </p>
+                <p>
+                  <strong>Weight:</strong> {person.mass}
+                </p>
               </div>
             </AccordionDetails>
           </Accordion>
