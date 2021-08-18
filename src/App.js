@@ -40,7 +40,7 @@ function App() {
             >
               {person.name}
             </AccordionSummary>
-            <p>test</p>
+            <p>test 2</p> 
             <AccordionDetails>
               <div className="person-details">
                 <p>
