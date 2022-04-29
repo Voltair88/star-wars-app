@@ -36,6 +36,10 @@ Start the server
   npm run start
 ```
 
+## Demo
+
+[Demo](https://elegant-aryabhata-b3ff31.netlify.app/)
+
 
 ## Screenshots
 
